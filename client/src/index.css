@@ -2,11 +2,11 @@
 
 @import "tailwindcss";
 
-*{
+* {
   font-family: "Outfit" , sans-serif;
 }
 
-@theme{
+@theme {
   --color-primary: #4fbf8b;
   --color-primary-dull: #44ae7c;
 }
