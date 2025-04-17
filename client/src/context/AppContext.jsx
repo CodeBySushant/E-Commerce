@@ -1,4 +1,4 @@
-import { Children, createContext, useContext } from "react";
+import { createContext, useContext } from "react";
 
 export const AppContext = createContext();
 export const AppContextProvider = ({children})=>{
@@ -7,10 +7,10 @@ export const AppContextProvider = ({children})=>{
     const [isSeller, setIsSeller] = useState(null)
     
     const value = {navigate, user, setUser, setIsSeller, isSeller}
-    
+
     return <AppContext.Provider value={value}>
         {children}
-        </AppContext.Provider>;
+        </AppContext.Provider>
 }
 
 export const useAppContext = ()=>{
